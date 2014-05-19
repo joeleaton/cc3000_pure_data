@@ -1,0 +1,11 @@
+#N canvas 0 22 450 300 10;
+#X msg -1 70 connect 127.0.0.1 9997;
+#X obj 2 147 tgl 15 0 empty empty connected 20 7 0 8 -24198 -241291
+-1 0 1;
+#X obj 2 124 udpsend;
+#X floatatom 30 98 5 0 0 0 - - -;
+#X text 145 64 Set to CC3000 static IP and port;
+#X text 68 96 Send data;
+#X connect 0 0 2 0;
+#X connect 2 0 1 0;
+#X connect 3 0 2 0;
